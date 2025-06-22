@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - TwirlBelle</title>
+  <link rel="stylesheet" href="service-page.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">TwirlBelle</h1>
+      <nav class="main-nav" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="Landing-page.html">Home</a></li>
+          <li><a href="About-page.html">About</a></li>
+          <li><a href="Service-page.html" style="color:#119494;">Service</a></li>
+          <li><a href="contact-page.html">Contact</a></li>
+        </ul>
+        <a href="#" class="cta-button">Sign Up</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Our Services</h1>
+      <p>Welcome to TwirlBelle — where style meets purpose. We bring you fashion that's personalized, sustainable, and fast. Let your wardrobe do the talking.</p>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="service-card">
+      <img src="https://cdn-blog.prose.com/1/2022/08/styling-gel-header.jpg" alt="Custom Styling" />
+      <h2>Custom Styling</h2>
+      <p>Personalized outfits tailored to your vibe, occasion, and personality.</p>
+      <a href="#" class="service-btn">View Services</a>
+    </div>
+    <div class="service-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXaGRbN7HpKwsP75w79C9DluzCtl_klLtnmsIh7EaaGw-Vb2L3dzXbvMKPcLJHdH9JSys&usqp=CAU" alt="Eco Wardrobe" />
+      <h2>Eco Wardrobe</h2>
+      <p>Swap, save, and stay stylish with our eco-conscious fashion options.</p>
+      <a href="#" class="service-btn">View Services</a>
+    </div>
+    <div class="service-card">
+      <img src="https://fashinza.com/textile/wp-content/uploads/2021/12/shutterstock_1324854251-1.jpg" alt="Fast Delivery" />
+      <h2>Fast Delivery</h2>
+      <p>Enjoy fast and free delivery on every order, hassle-free and quick.</p>
+      <a href="#" class="service-btn">View Services</a>
+    </div>
+  </section>
+
+  <section class="explore-section">
+    <h2>We'll Make It Fashionable & Trendy for You</h2>
+    <a href="#" class="explore-btn">Explore Products</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 TwirlBelle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

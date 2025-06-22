@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #119494;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-container {
+  display: flex;
+  gap: 10px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #14b8b8;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+.hero {
+  margin-top: 80px;
+  background-image: url('https://vomendi.com/cdn/shop/files/VOMENDI_Banner_1.jpg?v=1680426064&width=3840');
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #14b8b8;
+}
+
+.highlights-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  padding: 40px 20px;
+  background-color: #eaebeb;
+  text-align: center;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.highlight h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.highlight p {
+  font-size: 1rem;
+  color: #666;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.highlight img:hover,
+.highlight h3:hover,
+.highlight p:hover {
+  transform: scale(1.1);
+  color: #14b8b8;
+}
+
+.bottom-cta {
+  background-color: #2f5e7a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottom-cta h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', cursive;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.start-button {
+  padding: 14px 32px;
+  background-color: #14b8b8;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #0d8b8b;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
